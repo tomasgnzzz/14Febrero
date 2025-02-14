@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffccf2;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    position: relative;
+    flex-direction: column;
+}
+
+.music-player {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff99cc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 14px;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease;
+}
+
+.music-player:hover {
+    opacity: 1; /* Aparece al pasar el mouse */
+}
+
+.music-player button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.music-player input[type="range"] {
+    width: 100px;
+    margin-top: 5px;
+}
+
+.container {
+    text-align: center;
+    background-color: #ff99cc;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.container img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container p {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.yes {
+    background-color: #ff4d4d;
+    color: white;
+    text-decoration: none;
+}
+
+.no {
+    background-color: #ff9999;
+    color: white;
+    position: relative;
+}
+
+.no:hover {
+    background-color: #ff6666;
+}
+
+.btn.return {
+    background-color: #ff9999;
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn.return:hover {
+    background-color: #ff6666;
+}
